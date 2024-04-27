@@ -1,0 +1,10 @@
+services:
+  web_server:
+    build:
+      context: web
+    container_name: web_server
+    volumes:
+      - ../frontend/dist:/var/www/frontend:ro
+      - ./web/ngnix-server-DEV.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "0.0.0.0:${WEB_PORT}:80/tcp"

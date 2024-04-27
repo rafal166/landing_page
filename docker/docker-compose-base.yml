@@ -1,0 +1,13 @@
+name: table_website
+
+services:
+  vite:
+    image: node:alpine
+    container_name: landing_page_vite
+    entrypoint: /bin/sh
+    ports:
+      - 8001:8000
+    working_dir: /var/www/frontend
+    volumes:
+      - ../frontend/:/var/www/frontend
+    tty: true

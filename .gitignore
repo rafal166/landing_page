@@ -1,0 +1,5 @@
+.idea
+docker/certbot/*
+!docker/certbot/init-letsencrypt.sh
+*.local
+.env

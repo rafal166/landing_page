@@ -1,0 +1,83 @@
+@import "colors";
+
+.btn-primary {
+  @include button-variant($secondary-color-o-less, $secondary-color, #ffffff, $secondary-color-o-more, $secondary-color, #ffffff);
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($secondary-color, #FFF, $secondary-color-o-less, $secondary-color);
+}
+
+.btn-secondary {
+  @include button-variant($bg-secondary-color, darken($bg-secondary-color, 7.5%), darken($bg-secondary-color, 10%), lighten($bg-secondary-color, 5%), lighten($bg-secondary-color, 10%), darken($bg-secondary-color, 30%));
+}
+
+.btn-outline-secondary {
+  @include button-outline-variant($bg-secondary-color, #222222, lighten($bg-secondary-color, 5%), $bg-secondary-color);
+}
+
+.glass-view {
+  backdrop-filter: blur(7px) saturate(200%);
+  -webkit-backdrop-filter: blur(7px) saturate(200%)
+}
+
+//INPUTS
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #304d30DA;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -12px; /* Centers thumb on the track */
+  background-color: #dfcc25;
+  border-radius: 0rem;
+  height: 2rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #dfcc25;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #304d30DA;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #dfcc25;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0rem;
+  height: 2rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+  outline: 3px solid #dfcc25;
+  outline-offset: 0.125rem;
+}
