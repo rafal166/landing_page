@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      targetDate: new Date('2024-05-10'),
+      targetDate: new Date('2024-06-10'),
       countdown: ''
     }
   },
@@ -23,7 +23,7 @@ export default {
       this.countdown = days + " dni " + hours + " godzin " + minutes + " minut " + seconds + " sekund ";
     }
   }
-}
+} 
 </script>
 
 <template>
