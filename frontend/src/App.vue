@@ -1,7 +1,7 @@
 <script setup>
-import Main from './components/Main.vue'
+import ContactCard from "./components/ContactCard.vue";
 </script>
 
 <template>
-  <Main/>
+  <ContactCard/>
 </template>
