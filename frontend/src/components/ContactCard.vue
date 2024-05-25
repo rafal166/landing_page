@@ -28,14 +28,14 @@ const linkedinUrl = 'https://www.linkedin.com/in/rafal-rzewucki/';
 
     <div class="row w-100">
       <div class="contact-item col-lg-3 col-12">
-        <a class="btn btn-primary" href="{{linkedinUrl}}">
+        <a class="btn btn-primary" :href="linkedinUrl">
           <FontAwesomeIcon :icon="faLinkedin"/>
           LinkedIn
         </a>
       </div>
 
       <div class="contact-item col-lg-3 col-12">
-        <a class="btn btn-primary" href="{{githubUrl}}">
+        <a class="btn btn-primary" :href="githubUrl">
           <FontAwesomeIcon :icon="faGithub"/>
           Github
         </a>
@@ -47,7 +47,7 @@ const linkedinUrl = 'https://www.linkedin.com/in/rafal-rzewucki/';
           Pokaż telefon
         </div>
         <div v-else class="btn btn-outline-primary">
-          <a href="tel:{{ phone }}">
+          <a :href="'tel:' + phone">
             <FontAwesomeIcon :icon="faPhone"/>
             {{ phoneForDisplay }}</a>
         </div>
@@ -60,7 +60,7 @@ const linkedinUrl = 'https://www.linkedin.com/in/rafal-rzewucki/';
           Pokaż email
         </div>
         <div v-else class="btn btn-outline-primary">
-          <a href="mailto:{{ email }}">
+          <a :href="'mailto:' + email">
             <FontAwesomeIcon :icon="faEnvelope"/>
             {{ email }}</a>
         </div>
