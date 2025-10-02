@@ -17,7 +17,7 @@ const linkedinUrl = 'https://www.linkedin.com/in/rafal-rzewucki/';
 
 
 <template>
-  <div class="container contact-card">
+  <div class="contact-card">
     <h1>Rafał Rzewucki</h1>
     <p></p>
     <a href="https://demo.r2solutions.pl" class="btn btn-primary px-4">
@@ -80,7 +80,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   text-align: center;
 }
 

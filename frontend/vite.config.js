@@ -16,7 +16,8 @@ export default defineConfig((command, mode) => {
             port: 8000,
             watch: {
                 usePolling: true
-            }
+            },
+            allowedHosts: ['dev.local'],
         }
     }
 })
