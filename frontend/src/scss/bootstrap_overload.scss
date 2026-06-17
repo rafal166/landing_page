@@ -16,6 +16,16 @@
   @include button-outline-variant($bg-secondary-color, #222222, lighten($bg-secondary-color, 5%), $bg-secondary-color);
 }
 
+.btn-accent {
+  @include button-variant($accent-color, $accent-color, $primary-color, $accent-color-hover, $accent-color-hover, $primary-color);
+  font-weight: 600;
+}
+
+.btn-outline-accent {
+  @include button-outline-variant($accent-color, $primary-color, $accent-color, $accent-color);
+  font-weight: 600;
+}
+
 .glass-view {
   backdrop-filter: blur(7px) saturate(200%);
   -webkit-backdrop-filter: blur(7px) saturate(200%)

@@ -1,11 +1,21 @@
 <script setup>
-import ContactCard from "./components/ContactCard.vue";
-import EduCard from "./components/EduCard.vue";
+import NavBar from "./components/NavBar.vue";
+import HeroSection from "./components/HeroSection.vue";
+import SkillsSection from "./components/SkillsSection.vue";
+import ExperienceSection from "./components/ExperienceSection.vue";
+import ProjectsSection from "./components/ProjectsSection.vue";
+import ContactSection from "./components/ContactSection.vue";
+import SiteFooter from "./components/SiteFooter.vue";
 </script>
 
 <template>
-  <main class="container">
-    <ContactCard/>
-    <EduCard/>
+  <NavBar/>
+  <main>
+    <HeroSection/>
+    <SkillsSection/>
+    <ExperienceSection/>
+    <ProjectsSection/>
+    <ContactSection/>
   </main>
+  <SiteFooter/>
 </template>
