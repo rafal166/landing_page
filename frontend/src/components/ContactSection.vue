@@ -1,7 +1,7 @@
 <script setup>
 import {reactive} from 'vue'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
-import {faEnvelope, faEye, faPhone, faShieldHalved} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faEye, faShieldHalved} from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 // Ochrona przed scraperami:
@@ -14,7 +14,6 @@ const EMAIL_ENC = 'cnJ6ZXd1Y2tpQHIyc29sdXRpb25zLnBs'
 
 const channels = [
   {key: 'email', icon: faEnvelope, label: 'E-mail', type: 'mailto', enc: EMAIL_ENC, show: EMAIL_ENC},
-  {key: 'phone', icon: faPhone, label: 'Telefon', type: 'tel', enc: 'KzQ4Njk1MzYwMzEw', show: 'KzQ4IDY5NSAzNjAgMzEw'},
   {
     key: 'linkedin', icon: faLinkedin, label: 'LinkedIn', type: 'url', external: true,
     enc: 'aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3JhZmFsLXJ6ZXd1Y2tpLw==', show: 'cmFmYWwtcnpld3Vja2k=',
@@ -47,7 +46,7 @@ function writeEmail() {
     <div class="container">
       <h2 class="section-title" v-reveal>Kontakt</h2>
       <p class="section-subtitle" v-reveal="{ delay: 80 }">
-        Masz projekt do utrzymania albo rozwoju? Napisz lub zadzwoń — chętnie pomogę.
+        Masz projekt do utrzymania albo rozwoju? Napisz na maila z prośbą o kontakt — chętnie pomogę.
       </p>
 
       <div class="row g-4 justify-content-center">
